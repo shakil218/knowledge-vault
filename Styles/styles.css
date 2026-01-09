@@ -204,8 +204,7 @@ body {
 
 .notes-grid {
   display: grid;
-  /* search this line later */
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -335,4 +334,66 @@ body {
 .early-access-meta .dot {
   font-size: 18px;
   line-height: 1;
+}
+
+/* Footer section css */
+.app-footer {
+  background-color: #0f172a;
+  color: #e5e7eb;
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/*Footer Social section */
+.footer-social h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icons a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: #1e293b;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Divider */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #334155;
+  margin: 40px 0 20px;
+}
+
+/* Bottom footer */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #9ca3af;
 }
