@@ -60,3 +60,110 @@ body {
   color: #020617;
   box-shadow: 0 0 15px #30b868;
 }
+
+.banner {
+  position: relative;
+  height: 90vh;
+  background-image: url("../assets/images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.75);
+}
+
+.banner-content {
+  position: relative;
+  max-width: 900px;
+  padding: 0 60px;
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.banner-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;    
+  padding: 6px 14px;
+  font-size: 14px;
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #22c55e;
+  border-radius: 20px;
+}
+
+.banner-badge::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #22c55e;     
+  border-radius: 50%;
+  box-shadow: 0 0 8px #22c55e;   
+}
+
+
+.banner-content h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.banner-content h1 span {
+  color: #22c55e;
+}
+
+.banner-content p {
+  font-size: 18px;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  color: #cbd5f5;
+}
+
+
+.banner-buttons {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.banner-buttons-a {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.primary-btn {
+  background-color: #22c55e;
+  border: 2px solid #22c55e;
+  color: #020617;
+}
+
+.primary-btn:hover {
+  background-color: #16a34a;
+  box-shadow: 0 0 20px #22c55e;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: 2px solid #e5e7eb;
+  color: #e5e7eb;
+}
+
+.secondary-btn:hover {
+  background-color: #e5e7eb;
+  color: #020617;
+}
+
